@@ -1,0 +1,110 @@
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-j6zm{font-weight:bold;text-align:left;vertical-align:bottom}
+.tg .tg-7zrl{text-align:left;vertical-align:bottom}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-j6zm">&nbsp;&nbsp;&nbsp;<br>Bit</th>
+    <th class="tg-j6zm">&nbsp;&nbsp;&nbsp;<br>Ticker</th>
+    <th class="tg-j6zm">&nbsp;&nbsp;&nbsp;<br>BIP #</th>
+    <th class="tg-j6zm">&nbsp;&nbsp;&nbsp;<br>Description&nbsp;&nbsp;&nbsp;</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>1</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>APO</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>118</td>
+    <td class="tg-7zrl">BIP 118 (SIGHASH_ANYPREVOUT or&nbsp;&nbsp;&nbsp;APO) introduces a new signature hashing mode that allows signatures to be&nbsp;&nbsp;&nbsp;valid for any previous output, enabling more flexible and scalable off-chain&nbsp;&nbsp;&nbsp;protocols such as payment channels and channel factories.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>2</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>BMM</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>301</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;BIP 301 (Blind Merged Mining or BMM), allows Bitcoin miners to earn fees from&nbsp;&nbsp;&nbsp;other blockchains, without running their software, by allowing users of those&nbsp;&nbsp;&nbsp;chains to bid for inclusion in Bitcoin blocks.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>3</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>CAT</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>347</td>
+    <td class="tg-7zrl">BIP 347 (OP_CAT) seeks to&nbsp;&nbsp;&nbsp;reintroduce the OP_CAT opcode, enabling the concatenation of data elements in&nbsp;&nbsp;&nbsp;Bitcoin Script, which would allow for more expressive smart contracts and&nbsp;&nbsp;&nbsp;complex spending conditions.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>4</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>CCV</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>none</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;OP_CCV (OP_CHECKCONTRACTVERIFY) is a proposed opcode that allows a script to&nbsp;&nbsp;&nbsp;require that a transaction output matches a specific contract or template,&nbsp;&nbsp;&nbsp;enabling new forms of covenants and programmable spending conditions.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>5</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>CSFS</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>none</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;OP_CSFS (OP_CHECKSIGFROMSTACK) is a proposed opcode allowing signature&nbsp;&nbsp;&nbsp;verification against arbitrary data from the script stack, enabling more&nbsp;&nbsp;&nbsp;flexible contract constructions and cross-chain protocols.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>6</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>CTV</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>119</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;BIP 119 (OP_CHECKTEMPLATEVERIFY or CTV) proposes a new opcode that lets users&nbsp;&nbsp;&nbsp;restrict how and where specific UTXOs can be spent by committing to a&nbsp;&nbsp;&nbsp;template of the spending transaction, enabling advanced features like vaults,&nbsp;&nbsp;&nbsp;congestion control, and payment pools.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>7</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>DC</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>300</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;BIP 300 (OP_DRIVECHAIN or DC) enables the creation of Bitcoin sidechains&nbsp;&nbsp;&nbsp;called Drivechains, where miners approve withdrawals from sidechains back to&nbsp;&nbsp;&nbsp;the main chain, allowing experimentation with new features without changing&nbsp;&nbsp;&nbsp;Bitcoin’s base layer.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>8</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>GCC</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>none</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>The Great Consensus&nbsp;&nbsp;&nbsp;Cleanup (GCC) is a proposal to remove or clarify ambiguous, unused, or&nbsp;&nbsp;&nbsp;dangerous rules in Bitcoin’s consensus code, improving maintainability and&nbsp;&nbsp;&nbsp;reducing attack surface.&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>9</td>
+    <td class="tg-7zrl">GSR</td>
+    <td class="tg-7zrl">none</td>
+    <td class="tg-7zrl">The Great Script Restoration&nbsp;&nbsp;&nbsp;(GSR) aims to re-enable previously disabled or restricted Bitcoin Script&nbsp;&nbsp;&nbsp;opcodes, such as OP_CAT, to expand scripting capabilities and&nbsp;&nbsp;&nbsp;programmability.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>10</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;INKEY</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>none</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>OP_INTERNALKEY (INKEY) is&nbsp;&nbsp;&nbsp;a proposed opcode that exposes the internal public key used in Taproot&nbsp;&nbsp;&nbsp;scripts, allowing for more advanced contract constructions and key management&nbsp;&nbsp;&nbsp;schemes.&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>11</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;PAIRC</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;OP_PAIRCOMMIT (PAIRC) is a proposal for a new opcode that allows committing&nbsp;&nbsp;&nbsp;to pairs of data in a transaction, facilitating more complex covenant and&nbsp;&nbsp;&nbsp;contract designs.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">12</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>QNTUM</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>360</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;BIP 360 outlines a transition plan to quantum-resistant cryptography for&nbsp;&nbsp;&nbsp;Bitcoin by introducing new output types and hybrid signature schemes to&nbsp;&nbsp;&nbsp;mitigate the risks posed by future quantum computers.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>13</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;TWEKD</td>
+    <td class="tg-7zrl">none</td>
+    <td class="tg-7zrl">OP_TWEAKADD (TWEKD) is a&nbsp;&nbsp;&nbsp;proposed opcode that enables the addition of a tweak (a value) to a public&nbsp;&nbsp;&nbsp;key within Bitcoin Script, supporting advanced cryptographic protocols and&nbsp;&nbsp;&nbsp;key management.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>14</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;TXHSH</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;OP_TXHASH (TXHSH) is a proposed opcode that allows scripts to access the hash&nbsp;&nbsp;&nbsp;of the current transaction, enabling introspection and more dynamic contract&nbsp;&nbsp;&nbsp;logic.</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>15</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>VAULT</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>345</td>
+    <td class="tg-7zrl">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;BIP 345 (OP_VAULT or VAULT) allows users to set secure withdrawal conditions&nbsp;&nbsp;&nbsp;and recovery paths for their bitcoin.</td>
+  </tr>
+</tbody></table>

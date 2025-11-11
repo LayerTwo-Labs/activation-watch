@@ -1,0 +1,212 @@
+{
+  "en": {
+    "main_page": {
+      "header": "ACTIVATION.WATCH",
+      "links": {
+        "link1": "How to Signal",
+        "link2": "Proposal Info"
+      },
+      "subheader": "Miner Sentiment Analysis",
+      "info_text": "'The mining community is interested in activating _______, if there are no objections from the technical community.'",
+      "speedy_trial": "90% hashrate support is required to activate via <a style=\"text-decoration: underline; cursor: pointer; color: #f2a900;\" href=\"https://www.coindesk.com/tech/2021/06/12/locked-in-bitcoins-taproot-upgrade-gets-its-90-mandate/\" target=\"_blank\">Speedy Trial</a>",
+      "count": "Count",
+      "read_why": {
+        "text1": "A score of 100% means 100%, but a score of 50% may mean 0%.",
+        "text2": "Read why.",
+        "text3": "Unclaimed bits are sometimes used by miners for extra randomness. These bits will flip randomly and thus show a 'signal' of about 50%. But in reality any unclaimed bit is just not being used for signaling, and so 0% of miners are signaling for it."
+      }
+    },
+    "how_to_signal": {
+      "subheader": "How to Signal",
+      "introduction": "This is a guide on how to signal support for a Bitcoin BIP.",
+      "option1": "Option 2: Use Pre-built Binaries",
+      "step_1_1": "1. Download the binary: ",
+      "step_1_2": "2. Example usage:",
+      "option2": "Option 1: Build from Source",
+      "step_2_1": "1. Checkout Bitcoin branch 29.x: ",
+      "step_2_2": "2. Update these three files: ",
+      "step_2_3": "3. Example usage: "
+    },
+    "bip_page": {
+      "APO": {
+        "text1": "<a href=\"https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki\" target=\"_blank\">\"Any Prev Out\"</a> or APO, improves Lightning by enabling <a href=\"https://bitcoinops.org/en/topics/eltoo/\" target=\"_blank\">eltoo</a>, <a href=\"https://bitcoinops.org/en/topics/channel-factories/\" target=\"_blank\">channel factories</a>, and <a href=\"https://medium.com/@RubenSomsen/statechains-non-custodial-off-chain-bitcoin-transfer-1ae4845a4a39\" target=\"_blank\">statechains</a>. Without APO, each LN-node uses more and more RAM over time -- each eventually must crash or be closed (or rolled-over).",
+        "text2": "These benefits may not be worth it. Eltoo lacks <a href=\"https://eprint.iacr.org/2022/1295.pdf\" target=\"_blank\">\"punishment\"</a> for cheaters, and therefore may not be incentive-compatible. Channel factories can be <a href=\"https://www.truthcoin.info/blog/lightning-limitations/#b-fragile-factories\" target=\"_blank\">attacked for free</a> and may be complex to setup and use. Statechains require a federation and are thus \"custodial\".",
+        "text3": "APO does not seem to harm any other Bitcoin use-cases, so it should probably activate.",
+        "url": "https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki"
+      },
+      "CTV": {
+        "text1": "\"CheckTemplateVerify\" or CTV, is required for <a href=\"https://www.youtube.com/watch?v=EocWax43QgQ\" target=\"_blank\">ARK</a>. It also enables <a href=\"https://twitter.com/4moonsettler/status/1676649101298143233?s=20\" target=\"_blank\">congestion control</a>, some <a href=\"https://utxos.org/uses/vaults/\" target=\"_blank\">vaults</a>, and <a href=\"https://utxos.org/uses/\" target=\"_blank\">other use cases.</a>",
+        "text2": "It may be possible to improve on CTV. In which case, we should only activate the best, optimal version. On the other hand, this kind of talk may be \"stalling\" or \"bikeshedding\".",
+        "text3": "CTV does not seem to harm any other Bitcoin use-cases, so it should probably activate.",
+        "url": "https://github.com/bitcoin/bips/blob/master/bip-0119.mediawiki"
+      },
+      "DC": {
+        "text1": "BIP 300 enables decentralized sidechains such as <a href=\"https://www.drivechain.info/blog/ethside-guide/\" target=\"_blank\">EthSide</a> or <a href=\"https://github.com/LayerTwo-Labs/zcash-sidechain/blob/master/zside-tour-2022.sh\" target=\"_blank\">zSide</a>, or even <a href=\"https://www.truthcoin.info/blog/thunder/\" target=\"_blank\">a largeblock sidechain</a>. Bitcoin development becomes more competitive.",
+        "text2": "Users may not trust BIP300, making it useless. Also, miners would be responsible for adding/removing sidechains, which they may find wearisome.",
+        "text3": "BIP300 does not seem to harm any other Bitcoin use-cases, so it should probably activate.",
+        "url": "https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki"
+      },
+      "BMM": {
+        "text1": "<a href=\"https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki#motivation\" target=\"_blank\">Blind Merged Mining</a> improves merged mining, by removing the need for miners to run alt-chain software. BIP301 can be used by Altcoins (such as namecoin) or Bip300 sidechains (called \"drivechains\").",
+        "text2": "There do not seem to be any technical objections to BIP 301. Merged mining has been <a href=\"https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining\" target=\"_blank\">in continuous use for over 10 years</a>. On the other hand, there has not yet been very much technical commentary on BIP 301.",
+        "text3": "BIP301 does not seem to harm any other Bitcoin use-cases, so it should probably activate.",
+        "url": "https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki"
+      },
+      "VAULT": {
+        "text1": "<a href=\"https://river.com/learn/what-is-op-vault-in-bitcoin/\" target=\"_blank\">\"OP Vault\"</a> is a narrower alternative to 119 that focuses only the vault use-case. Vaults may help Bitcoiners <a href=\"https://github.com/jlopp/physical-bitcoin-attacks\" target=\"_blank\">deter theft</a>.",
+        "text2": "It is unclear if OP Vault is the best way to achieve vaults. On the other hand, there does not seem to be any reason not to try them.",
+        "text3": "BIP345 does not seem to harm any other Bitcoin use-cases, so it should probably activate.",
+        "url": "https://github.com/bitcoin/bips/pull/1421#issuecomment-1452814811"
+      },
+      "CAT" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "CCV" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "CSFS" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "GCC" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "GSR" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "INKEY" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "PAIRC" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "QNTUM" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "TWEKD" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "TXHSH" : {
+	"text1": "",
+        "text2": "",
+        "text3": "",
+        "url": ""
+      },
+      "signalling_blocks": "signalling blocks",
+      "upcoming_blocks": "upcoming blocks",
+      "non_signalling_blocks": "non-signalling blocks",
+      "box_container_label": "Current signalling period of 2016 blocks (2 weeks)",
+      "softfork_info": {
+        "status": "Status: started",
+        "bit": "Bit: ",
+        "count": "Count: ",
+        "elapsed": "Elapsed: ",
+        "period": "Period: ",
+        "threshold": "Threshold: ",
+        "possible": "Possible: "
+      }
+    }
+  },
+  "zh": {
+    "main_page": {
+      "header": "BTC 软分叉/升级观察",
+      "links": {
+        "link1": "如何表达你的支持",
+        "link2": "提案信息"
+      },
+      "subheader": "矿工情绪分析",
+      "info_text": "“如果技术社区没有反对的话，矿工社区有兴趣激活_______。”",
+      "speedy_trial": "只有90%的支持率才能通过 <a style=\"text-decoration: underline; cursor: pointer; color: #f2a900;\" href=\"https://www.coindesk.com/tech/2021/06/12/locked-in-bitcoins-taproot-upgrade-gets-its-90-mandate/\" target=\"_blank\">Speedy Trial</a> 激活BIP",
+      "count": "数量",
+      "read_why": {
+        "text1": "100% 支持的分数实际上是 100%，但 50% 的分数实际上可能等于 0%。",
+        "text2": "为什么?",
+        "text3": "无人认领的 bits 有时被矿工用来获得额外的随机性。这些 bits 将随机翻转，从而显示大约 50% 的“支持信号”。但实际上，任何无人认领的 bit 都不能用于任何类型的信令，因此支持级别实际上可能为 0%。"
+      }
+    },
+    "how_to_signal": {
+      "subheader": "如何表示支持",
+      "introduction": "这是关于如何表示对比特币 BIP 的支持。",
+      "option1": "选择 1：使用预构建的 Binaries",
+      "step_1_1": "1. 下载 binary: ",
+      "step_1_2": "2. 用法示例：",
+      "option2": "选择 2: 从源代码构建",
+      "step_2_1": "1. 结帐 BTC 分支 25x：",
+      "step_2_2": "2. 更新这三个文件：",
+      "step_2_3": "3. 用法示例：",
+      "option3": "选择 3: 直接设置 VersionBits",
+      "step_3_1": "如果您的挖矿软件允许，只需将以下版本 VersionBits 位设置为 “1”"
+    },
+    "bip_page": {
+      "APO": {
+        "text1": "<a href=\"https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki\" target=\"_blank\">\"Any Prev Out\"</a> 或 APO, 通过启用 <a href=\"https://bitcoinops.org/en/topics/eltoo/\" target=\"_blank\">eltoo</a>, <a href=\"https://bitcoinops.org/en/topics/channel-factories/\" target=\"_blank\">通道工厂</a> 和 <a href=\"https://medium.com/@RubenSomsen/statechains-non-custodial-off-chain-bitcoin-transfer-1ae4845a4a39\" target=\"_blank\">statechains</a> 来改进 LN. 如果没有 APO，每个 LN 节点都会随着时间的推移使用越来越多的 RAM — 每个节点最终都必须崩溃或关闭（或翻转）。",
+        "text2": "这些好处可能并不值得。 Eltoo 缺乏 <a href=\"https://eprint.iacr.org/2022/1295.pdf\" target=\"_blank\">对作弊者的惩罚</a>, 因此可能与激励不相容。 通道工厂可以 <a href=\"https://www.truthcoin.info/blog/lightning-limitations/#b-fragile-factories\" target=\"_blank\">免费受到攻击</a> 并且设置和使用可能很复杂。 Statechains 需要一个联盟，因此是托管的。",
+        "text3": "APO 似乎不会损害任何其他 BTC 用例，因此它可能应该被激活。",
+        "url": "https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki"
+      },
+      "119": {
+        "text1": "<a href=\"https://www.youtube.com/watch?v=EocWax43QgQ\" target=\"_blank\">ARK</a> 需要“CheckTemplateVerify” 或 CTV。 它还支持 <a href=\"https://twitter.com/4moonsettler/status/1676649101298143233?s=20\" target=\"_blank\">拥塞控制</a>, <a href=\"https://utxos.org/uses/vaults/\" target=\"_blank\">某些保管库</a>, <a href=\"https://utxos.org/uses/\" target=\"_blank\">和其他用例。</a>",
+        "text2": "CTV 或许可以改进。在这种情况下，我们应该只激活最好的、最优的版本。另一方面，这种谈话可能会拖延或甩掉自行车。",
+        "text3": "CTV 似乎不会损害任何其他 BTC 用例，因此它可能应该被激活。",
+        "url": "https://github.com/bitcoin/bips/blob/master/bip-0119.mediawiki"
+      },
+      "300": {
+        "text1": "BIP300 支持去中心化侧链 (sidechains), <a href=\"https://www.drivechain.info/blog/ethside-guide/\" target=\"_blank\">例如 EthSide</a> 或 <a href=\"https://github.com/LayerTwo-Labs/zcash-sidechain/blob/master/zside-tour-2022.sh\" target=\"_blank\">zSide</a>, 甚至是 <a href=\"https://www.truthcoin.info/blog/thunder/\" target=\"_blank\">大型区块 (blocksize) 侧链。</a>. BTC 的发展变得更具竞争力。",
+        "text2": "用户可能不信任 BIP300，使其毫无用处。此外，矿工将负责添加/删除侧链，他们可能会觉得这很烦人。",
+        "text3": "BIP300 似乎不会损害任何其他 BTC 用例，因此它可能应该被激活。",
+        "url": "https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki"
+      },
+      "301": {
+        "text1": "<a href=\"https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki#motivation\" target=\"_blank\">盲目合并挖矿</a> 通过消除矿工运行替代链软件的需要来改进合并挖矿。BIP301 可由山寨币（例如 namecoin）或 Bip300 侧链 sidechains（称为 “Drivechains 驱动链”）使用。",
+        "text2": "BIP301 似乎没有任何技术异议。联合挖矿已经 <a href=\"https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining\" target=\"_blank\">连续使用了 10 多年。</a>. 另一方面，目前还没有太多关于 BIP301 的技术评论。",
+        "text3": "BIP301 似乎不会损害任何其他 BTC 用例，因此它可能应该激活。",
+        "url": "https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki"
+      },
+      "345": {
+        "text1": "<a href=\"https://river.com/learn/what-is-op-vault-in-bitcoin/\" target=\"_blank\">\"OP Vault\"</a> 是 BIP119 的更窄替代方案，仅关注 Vault 用例。金库可能有助于 BTC 爱好者 <a href=\"https://github.com/jlopp/physical-bitcoin-attacks\" target=\"_blank\">防止盗窃。</a>",
+        "text2": "目前尚不清楚 OP Vault 是否是实现金库 (vaults) 的最佳方式。另一方面，似乎没有任何理由不尝试它们。",
+        "text3": "BIP345 似乎不会损害任何其他 BTC 用例，因此它可能应该被激活。",
+        "url": "https://github.com/bitcoin/bips/pull/1421#issuecomment-1452814811"
+      },
+      "signalling_blocks": "支持信令的区块",
+      "upcoming_blocks": "未来的区块",
+      "non_signalling_blocks": "不支持的区块",
+      "box_container_label": "当前支持信号的区块（2周 / 2016 个区块）",
+      "softfork_info": {
+        "status": "状态：已启动",
+        "bit": "Bit: ",
+        "count": "数量: ",
+        "elapsed": "过去了: ",
+        "period": "时期: ",
+        "threshold": "临界点: ",
+        "possible": "可能性: "
+      }
+    }
+  }
+}

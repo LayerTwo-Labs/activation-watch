@@ -1,0 +1,15 @@
+/* styles/globals.css */
+
+@font-face {
+  font-family: 'VT323';
+  src: url('/fonts/VT323/VT323-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #121212;
+  color: #F2F2F2;
+  font-family: 'Roboto, sans-serif';
+}

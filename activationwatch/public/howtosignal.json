@@ -1,0 +1,478 @@
+[
+  {
+    "id": "console1",
+    "header": {
+      "text": "src/consensus/params.h",
+      "icon": "fa-solid fa-caret-right"
+    },
+    "lines": [
+      {
+        "ind": "0",
+        "type": "info",
+        "text": "-32,6, +32,11 @@ constexpr bool ValidDeployment(BuriedDeployment dep) { return dep <= DEPLOYMENT_"
+      },
+      {
+        "ind": "0",
+        "type": "default",
+        "linenum": "32",
+        "text": "enum DeploymentPos : uint16_t {"
+      },
+      {
+        "ind": "1",
+        "type": "default",
+        "linenum": "33",
+        "text": "DEPLOYMENT_TESTDUMMY,"
+      },
+      {
+        "ind": "1",
+        "type": "default",
+        "linenum": "34",
+        "text": "DEPLOYMENT_TAPROOT, // Deployment of Schnorr/Taproot (BIPs 340-342)"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "35",
+        "text": "DEPLOYMENT_118,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "36",
+        "text": "DEPLOYMENT_119,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "37",
+        "text": "DEPLOYMENT_300,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "38",
+        "text": "DEPLOYMENT_301,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "39",
+        "text": "DEPLOYMENT_345,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "40",
+        "text": "// NOTE: Also add new deployments to VersionBitsDeploymentInfo in deploymentinfo.cpp"
+      },
+      {
+        "ind": "1",
+        "type": "default",
+        "linenum": "41",
+        "text": "MAX_VERSION_BITS_DEPLOYMENTS"
+      },
+      {
+        "ind": "0",
+        "type": "default",
+        "linenum": "42",
+        "text": "};"
+      }
+    ]
+  },
+  {
+    "id": "console2",
+    "header": {
+      "text": "src/deploymentinfo.cpp",
+      "icon": "fa-solid fa-caret-right"
+    },
+    "lines": [
+      {
+        "ind": "0",
+        "type": "info",
+        "linenum": "16",
+        "text": "-17,6+17,27 @@ const struct VBDeploymentInfo VersionBitsDeploymentInfo[Consensus::MAX_VERSION_B"
+      },
+      {
+        "ind": "2",
+        "type": "default",
+        "linenum": "17",
+        "text": "/*.name =*/ \"taproot\","
+      },
+      {
+        "ind": "2",
+        "type": "default",
+        "linenum": "18",
+        "text": "/*.gbt_force =*/ true,"
+      },
+      {
+        "ind": "1",
+        "type": "default",
+        "linenum": "19",
+        "text": "},"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "20",
+        "text": "{"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "21",
+        "text": "/*.name =*/ \"118\","
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "22",
+        "text": "/*.gbt_force =*/ false,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "23",
+        "text": "},"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "24",
+        "text": "{"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "25",
+        "text": "/*.name =*/ \"119\","
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "26",
+        "text": "/*.gbt_force =*/ false,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "27",
+        "text": "},"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "28",
+        "text": "{"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "29",
+        "text": "/*.name =*/ \"300\","
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "30",
+        "text": "/*.gbt_force =*/ false,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "31",
+        "text": "},"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "32",
+        "text": "{"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "33",
+        "text": "/*.name =*/ \"301\","
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "34",
+        "text": "/*.gbt_force =*/ false,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "35",
+        "text": "},"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "36",
+        "text": "{"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "37",
+        "text": "/*.name =*/ \"345\","
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "38",
+        "text": "/*.gbt_force =*/ false,"
+      },
+      {
+        "ind": "1",
+        "type": "add",
+        "linenum": "39",
+        "text": "},"
+      },
+      {
+        "ind": "0",
+        "type": "default",
+        "linenum": "40",
+        "text": "};"
+      },
+      {
+        "ind": "0",
+        "type": "default",
+        "linenum": "41",
+        "text": "std::string DeploymentName(Consensus::BuriedDeployment dep)"
+      }
+    ]
+  },
+  {
+    "id": "console3",
+    "header": {
+      "text": "src/kernel/chainparams.cpp",
+      "icon": "fa-solid fa-caret-right"
+    },
+    "lines": [
+      {
+        "ind": "2",
+        "type": "info",
+        "text": "@@ -102,6 +102,36 @@ class CMainParams : public CChainParams {"
+      },
+      {
+        "ind": "2",
+        "type": "default",
+        "linenum": "102",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartTime = 1619222400; // April 24th, 2021"
+      },
+      {
+        "ind": "2",
+        "type": "default",
+        "linenum": "103",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1628640000; // August 11th, 2021"
+      },
+      {
+        "ind": "2",
+        "type": "default",
+        "linenum": "104",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 709632; // Approximately November 12th, 2021"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "105",
+        "text": ""
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "106",
+        "text": "// Deployment of 118"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "107",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_118].bit = 23;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "108",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_118].nStartTime = 1684964824;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "109",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_118].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "110",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_118].min_activation_height = 0;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "111",
+        "text": ""
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "112",
+        "text": "// Deployment of 119"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "113",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_119].bit = 24;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "114",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_119].nStartTime = 1684964824;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "115",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_119].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "116",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_119].min_activation_height = 0;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "117",
+        "text": ""
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "118",
+        "text": "// Deployment of 300"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "119",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_300].bit = 25;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "120",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_300].nStartTime = 1684964824;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "121",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_300].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "122",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_300].min_activation_height = 0;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "123",
+        "text": ""
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "124",
+        "text": "// Deployment of 301"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "125",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_301].bit = 26;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "126",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_301].nStartTime = 1684964824;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "127",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_301].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "128",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_301].min_activation_height = 0;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "129",
+        "text": ""
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "130",
+        "text": "// Deployment of 345"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "131",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_345].bit = 27;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "132",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_345].nStartTime = 1684964824;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "133",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_345].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;"
+      },
+      {
+        "ind": "2",
+        "type": "add",
+        "linenum": "134",
+        "text": "consensus.vDeployments[Consensus::DEPLOYMENT_345].min_activation_height = 0;"
+      },
+      {
+        "ind": "2",
+        "type": "default",
+        "linenum": "135",
+        "text": ""
+      },
+      {
+        "ind": "2",
+        "type": "default",
+        "linenum": "136",
+        "text": "consensus.nMinimumChainWork = uint256S(\"0x000000000000000000000000000000000000000044a50fe819c39ad624021859\");"
+      },
+      {
+        "ind": "2",
+        "type": "default",
+        "linenum": "137",
+        "text": "consensus.defaultAssumeValid = uint256S(\"0x000000000000000000035c3f0d31e71a5ee24c5aaf3354689f65bd7b07dee632\"); // 784000"
+      }
+    ]
+  }  
+]
+  

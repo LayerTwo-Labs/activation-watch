@@ -1,0 +1,213 @@
+diff --git a/src/consensus/params.h b/src/consensus/params.h
+index dd29b9408e..2a5659d124 100644
+--- a/src/consensus/params.h
++++ b/src/consensus/params.h
+@@ -32,6 +32,21 @@ constexpr bool ValidDeployment(BuriedDeployment dep) { return dep <= DEPLOYMENT_
+ enum DeploymentPos : uint16_t {
+     DEPLOYMENT_TESTDUMMY,
+     DEPLOYMENT_TAPROOT, // Deployment of Schnorr/Taproot (BIPs 340-342)
++    DEPLOYMENT_APO,
++    DEPLOYMENT_BMM,
++    DEPLOYMENT_CAT,
++    DEPLOYMENT_CCV,
++    DEPLOYMENT_CSFS,
++    DEPLOYMENT_CTV,
++    DEPLOYMENT_DC,
++    DEPLOYMENT_GCC,
++    DEPLOYMENT_GSR,
++    DEPLOYMENT_INKEY,
++    DEPLOYMENT_PAIRC,
++    DEPLOYMENT_QNTUM,
++    DEPLOYMENT_TWEKD,
++    DEPLOYMENT_TXHSH,
++    DEPLOYMENT_VAULT,
+     // NOTE: Also add new deployments to VersionBitsDeploymentInfo in deploymentinfo.cpp
+     MAX_VERSION_BITS_DEPLOYMENTS
+ };
+diff --git a/src/deploymentinfo.cpp b/src/deploymentinfo.cpp
+index 185a7dcb54..289680d5d6 100644
+--- a/src/deploymentinfo.cpp
++++ b/src/deploymentinfo.cpp
+@@ -17,6 +17,66 @@ const struct VBDeploymentInfo VersionBitsDeploymentInfo[Consensus::MAX_VERSION_B
+         /*.name =*/ "taproot",
+         /*.gbt_force =*/ true,
+     },
++    {
++        /*.name =*/ "APO",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "BMM",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "CAT",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "CCV",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "CSFS",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "CTV",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "DC",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "GCC",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "GSR",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "INKEY",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "PAIRC",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "QNTUM",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "TWEKD",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "TXHSH",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "VAULT",
++        /*.gbt_force =*/ false,
++    },
+ };
+ 
+ std::string DeploymentName(Consensus::BuriedDeployment dep)
+diff --git a/src/kernel/chainparams.cpp b/src/kernel/chainparams.cpp
+index ac3fc9eada..d048db95da 100644
+--- a/src/kernel/chainparams.cpp
++++ b/src/kernel/chainparams.cpp
+@@ -116,6 +116,81 @@ public:
+         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartTime = 1619222400; // April 24th, 2021
+         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeout = 1628640000; // August 11th, 2021
+         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 709632; // Approximately November 12th, 2021
++	
++        consensus.vDeployments[Consensus::DEPLOYMENT_APO].bit = 3;
++        consensus.vDeployments[Consensus::DEPLOYMENT_APO].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_APO].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_APO].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_BMM].bit = 4;
++        consensus.vDeployments[Consensus::DEPLOYMENT_BMM].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_BMM].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_BMM].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_CAT].bit = 5;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CAT].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CAT].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CAT].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_CCV].bit = 6;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CCV].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CCV].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CCV].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_CSFS].bit = 7;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CSFS].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CSFS].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CSFS].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].bit = 8;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_DC].bit = 9;
++        consensus.vDeployments[Consensus::DEPLOYMENT_DC].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_DC].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_DC].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].bit = 10;
++        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].bit = 11;
++        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_INKEY].bit = 12;
++        consensus.vDeployments[Consensus::DEPLOYMENT_INKEY].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_INKEY].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_INKEY].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_PAIRC].bit = 13;
++        consensus.vDeployments[Consensus::DEPLOYMENT_PAIRC].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_PAIRC].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_PAIRC].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].bit = 14;
++        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_TWEKD].bit = 15;
++        consensus.vDeployments[Consensus::DEPLOYMENT_TWEKD].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_TWEKD].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_TWEKD].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].bit = 16;
++        consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].min_activation_height = 0; 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].bit = 17;
++        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].min_activation_height = 0; 
+ 
+         consensus.nMinimumChainWork = uint256{"0000000000000000000000000000000000000000b1f3b93b65b16d035a82be84"};
+         consensus.defaultAssumeValid = uint256{"00000000000000000001b658dd1120e82e66d2790811f89ede9742ada3ed6d77"}; // 886157
+diff --git a/src/rpc/blockchain.cpp b/src/rpc/blockchain.cpp
+index ac1ce6285f..5dd98def46 100644
+--- a/src/rpc/blockchain.cpp
++++ b/src/rpc/blockchain.cpp
+@@ -1365,6 +1365,25 @@ RPCHelpMan getblockchaininfo()
+         obj.pushKV("signet_challenge", HexStr(signet_challenge));
+     }
+ 
++    UniValue softforks(UniValue::VOBJ);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_APO);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_BMM);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_CAT);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_CCV);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_CSFS);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_CTV);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_DC);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_GCC);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_GSR);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_INKEY);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_PAIRC);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_QNTUM);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_TWEKD);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_TXHSH);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_VAULT);
++
++    obj.pushKV("softforks", softforks);
++
+     NodeContext& node = EnsureAnyNodeContext(request.context);
+     obj.pushKV("warnings", node::GetWarningsForRpc(*CHECK_NONFATAL(node.warnings), IsDeprecatedRPCEnabled("warnings")));
+     return obj;
