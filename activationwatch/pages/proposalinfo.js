@@ -295,6 +295,14 @@ const ProposalInfo = () => {
                 ? 'BIP 345 (OP_VAULT or VAULT) allows users to set secure withdrawal conditions and recovery paths for their bitcoin.'
                 : 'BIP 345 (OP_VAULT 或 VAULT) 允许用户为其比特币设置安全的提款条件和恢复路径。'}</td>
             </tr>
+            <tr>
+              <td className="tg-7zrl">16</td>
+              <td className="tg-7zrl">RDTS</td>
+              <td className="tg-7zrl">444</td>
+              <td className="tg-7zrl">{language === 'en'
+                ? 'BIP 444 (Reduced Data Temporary Softfork) Temporarily limit the size of data fields at the consensus level.'
+                : 'BIP 444（缩减数据临时软分叉）暂时限制共识级别的数据字段大小。'}</td>
+            </tr>
           </tbody>
         </table>
       </Box>
