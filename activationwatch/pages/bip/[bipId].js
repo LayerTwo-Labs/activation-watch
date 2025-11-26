@@ -208,7 +208,7 @@ const Bip = () => {
             },
           }}
         >
-          {[bipId, ...['APO', 'BMM', 'CAT', 'CCV', 'CSFS', 'CTV', 'DC', 'GCC', 'GSR', 'INKEY', 'PAIRC', 'QNTUM', 'TWEKD', 'TXHSH', 'VAULT'].filter(b => b !== bipId)].map(bip => (
+          {[bipId, ...['APO', 'BMM', 'CAT', 'CCV', 'CSFS', 'CTV', 'DC', 'GCC', 'GSR', 'INKEY', 'PAIRC', 'QNTUM', 'TWEKD', 'TXHSH', 'VAULT', 'RDTS'].filter(b => b !== bipId)].map(bip => (
             <MenuItem key={bip} value={bip} sx={{color: '#F2F2F2', backgroundColor: '#121212', '&:hover': {backgroundColor: '#2a2a2a'}}}>
               {bip}
             </MenuItem>

@@ -21,6 +21,7 @@ index dd29b9408e..2a5659d124 100644
 +    DEPLOYMENT_TWEKD,
 +    DEPLOYMENT_TXHSH,
 +    DEPLOYMENT_VAULT,
++    DEPLOYMENT_RDTS,
      // NOTE: Also add new deployments to VersionBitsDeploymentInfo in deploymentinfo.cpp
      MAX_VERSION_BITS_DEPLOYMENTS
  };
@@ -90,6 +91,10 @@ index 185a7dcb54..289680d5d6 100644
 +    },
 +    {
 +        /*.name =*/ "VAULT",
++        /*.gbt_force =*/ false,
++    },
++    {
++        /*.name =*/ "RDTS",
 +        /*.gbt_force =*/ false,
 +    },
  };
@@ -178,7 +183,12 @@ index ac3fc9eada..d048db95da 100644
 +        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].nStartTime = 1745454818;
 +        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
 +        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].min_activation_height = 0; 
- 
++
++        consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].bit = 18;
++        consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].nStartTime = 1745454818;
++        consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
++        consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].min_activation_height = 0; 
+
          consensus.nMinimumChainWork = uint256{"0000000000000000000000000000000000000000b1f3b93b65b16d035a82be84"};
          consensus.defaultAssumeValid = uint256{"00000000000000000001b658dd1120e82e66d2790811f89ede9742ada3ed6d77"}; // 886157
 diff --git a/src/rpc/blockchain.cpp b/src/rpc/blockchain.cpp
@@ -205,6 +215,7 @@ index ac1ce6285f..5dd98def46 100644
 +    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_TWEKD);
 +    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_TXHSH);
 +    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_VAULT);
++    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_RDTS);
 +
 +    obj.pushKV("softforks", softforks);
 +
