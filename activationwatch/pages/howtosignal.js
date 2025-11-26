@@ -145,31 +145,6 @@ const HowToSignal = () => {
       <StyledDivider />
 
 
-
-      <Box sx={{ color: '#F2F2F2', marginTop:'40px'}}>
-        <StyledTypography variant="h4">
-        {text[language]["how_to_signal"]["option1"]}
-        </StyledTypography>
-      </Box>
-
-      <StyledBox sx={{ color: '#F2F2F2', marginTop:'20px'}}>
-        <StyledTypography>
-          {text[language]["how_to_signal"]["step_1_1"]} <Link href="bitcoin-activation-x86_64-pc-linux-gnu.tar.gz" style={{color: '#007bff', textDecoration: 'none'}}>bitcoin-activation-x86_64-pc-linux-gnu.tar.gz</Link>
-        </StyledTypography>
-        <StyledTypography sx={{marginTop: '15px'}}>
-          {text[language]["how_to_signal"]["step_1_2"]}
-        </StyledTypography>
-        <StyledTypography sx={{fontSize: '14px', marginTop: '15px', fontFamily: 'Roboto mono, Courier New, Courier, monospace'}}>
-          {"./bitcoin-cli getblocktemplate '{\"rules\": [\"segwit\", \"taproot\", \"APO\", \"TXHSH\"]}'"}
-        </StyledTypography>
-      </StyledBox>
-
-
-
-
-
-
-
     </Container>
   );
 }
