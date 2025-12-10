@@ -17,6 +17,70 @@ const std::array<VBDeploymentInfo,Consensus::MAX_VERSION_BITS_DEPLOYMENTS> Versi
         .name = "taproot",
         .gbt_optional_rule = true,
     },
+    VBDeploymentInfo{
+        .name = "APO",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "BMM",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "CAT",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "CCV",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "CSFS",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "CTV",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "DC",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "GCC",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "GSR",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "INKEY",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "PAIRC",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "QNTUM",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "TWEKD",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "TXHSH",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "VAULT",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "RDTS",
+        .gbt_optional_rule = true,
+    },
 };
 
 std::string DeploymentName(Consensus::BuriedDeployment dep)
