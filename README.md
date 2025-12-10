@@ -4,8 +4,7 @@ https://activation.watch/
 Bitcoin core setup:
 ```
 Config file: You need rpcuser & rpcpassword and no other configuration
-Clone bitcoin core, checkout 25.x branch
-Apply activation-watch.patch
+Clone bitcoin core 30.x + activation watch patches here: https://github.com/LayerTwo-Labs/activation-watch/tree/bitcoin-activation
 Build bitcoind
 Complete IBD
 ```
@@ -23,6 +22,7 @@ Move the activation-watch directory into your apache documents root
 (for example /var/www/html/)
  
 Build and start the nextjs software:
+npm install
 npm run build
 npm start
 ```
