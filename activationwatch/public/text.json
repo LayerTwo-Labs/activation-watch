@@ -19,10 +19,7 @@
     "how_to_signal": {
       "subheader": "How to Signal",
       "introduction": "This is a guide on how to signal support for a Bitcoin BIP.",
-      "option1": "Apply activation.patch and build from source ",
-      "step_2_1": "1. Checkout Bitcoin branch 29.x: ",
-      "step_2_2": "2. Update these three files: ",
-      "step_2_3": "3. Example usage: "
+      "step_1": "1. Build our patched Bitcoin 30.x: "
     },
     "bip_page": {
       "APO": {

@@ -135,22 +135,14 @@ const HowToSignal = () => {
 
       <StyledBox sx={{ color: '#F2F2F2', marginTop:'20px'}}>
         <StyledTypography>
-          {text[language]["how_to_signal"]["step_2_1"]} <Link href="https://github.com/bitcoin/bitcoin/tree/29.x" style={{color: '#007bff', textDecoration: 'none'}}>https://github.com/bitcoin/bitcoin/tree/29.x</Link>
-        </StyledTypography>
-
-        <StyledTypography sx={{fontSize: '14px', marginTop: '15px', fontFamily: 'Roboto mono, Courier New, Courier, monospace'}} >
-	  2. Apply patch:  
-          <Link href="activation.patch" style={{color: '#007bff', textDecoration: 'none'}}>activation.patch</Link>
+          {text[language]["how_to_signal"]["step_1"]} <Link href="https://github.com/LayerTwo-Labs/activation-watch/tree/bitcoin-activation" style={{color: '#007bff', textDecoration: 'none'}}>https://github.com/LayerTwo-Labs/activation-watch/tree/bitcoin-activation</Link>
         </StyledTypography>
 
         <StyledTypography sx={{fontSize: '14px', marginTop: '15px', fontFamily: 'Roboto mono, Courier New, Courier, monospace'}}>
-	  3. Mine blocks using GBT:
+	  2. Mine blocks using GBT:
           {"./bitcoin-cli getblocktemplate '{\"rules\": [\"segwit\", \"taproot\", \"APO\", \"TXHSH\"]}'"}
         </StyledTypography>
       </StyledBox>
-
-
-
       
       <StyledDivider />
 
