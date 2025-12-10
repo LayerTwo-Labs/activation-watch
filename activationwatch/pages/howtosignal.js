@@ -60,9 +60,14 @@ const HowToSignal = () => {
               fontSize: {xs: '16px', sm: '20px'},
               color: '#F2F2F2',
               marginRight: '15px',
-              transition: 'color 0.3s',
+              padding: '8px 16px',
+              border: '2px solid #F2F2F2',
+              borderRadius: '8px',
+              transition: 'all 0.3s',
               '&:hover': {
                 color: '#f2a900',
+                borderColor: '#f2a900',
+                backgroundColor: 'rgba(242, 169, 0, 0.1)',
               }
             }}
           >
@@ -77,9 +82,14 @@ const HowToSignal = () => {
               fontWeight: '500',
               fontSize: {xs: '16px', sm: '20px'},
               color: '#F2F2F2',
-              transition: 'color 0.3s',
+              padding: '8px 16px',
+              border: '2px solid #F2F2F2',
+              borderRadius: '8px',
+              transition: 'all 0.3s',
               '&:hover': {
                 color: '#f2a900',
+                borderColor: '#f2a900',
+                backgroundColor: 'rgba(242, 169, 0, 0.1)',
               }
             }}
           >
