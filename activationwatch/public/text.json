@@ -4,7 +4,7 @@
       "header": "ACTIVATION.WATCH",
       "links": {
         "link1": "How to Signal",
-        "link2": "Proposal Info"
+        "link2": "The Proposals"
       },
       "subheader": "Miner Sentiment Analysis",
       "info_text": "'The mining community is interested in activating _______, if there are no objections from the technical community.'",
@@ -141,7 +141,7 @@
       "header": "BTC 软分叉/升级观察",
       "links": {
         "link1": "如何表达你的支持",
-        "link2": "提案信息"
+        "link2": "提案"
       },
       "subheader": "矿工情绪分析",
       "info_text": "“如果技术社区没有反对的话，矿工社区有兴趣激活_______。”",
