@@ -51,7 +51,7 @@ const HowToSignal = () => {
 
       {/* Links */}
       <Box display="flex" justifyContent="center" alignItems="center">
-        <Link href="/howtosignal" style={{ textDecoration: 'none' }}>
+        <Link href="/proposalinfo" style={{ textDecoration: 'none' }}>
           <Typography 
             variant="h6" 
             sx={{
@@ -71,10 +71,10 @@ const HowToSignal = () => {
               }
             }}
           >
-            {text[language]["main_page"]["links"]["link1"]}
+            {text[language]["main_page"]["links"]["link2"]}
           </Typography>
         </Link>
-        <Link href="/proposalinfo" style={{ textDecoration: 'none' }}>
+        <Link href="/howtosignal" style={{ textDecoration: 'none' }}>
           <Typography 
             variant="h6" 
             sx={{
@@ -93,7 +93,7 @@ const HowToSignal = () => {
               }
             }}
           >
-            {text[language]["main_page"]["links"]["link2"]}
+            {text[language]["main_page"]["links"]["link1"]}
           </Typography>
         </Link>
         
