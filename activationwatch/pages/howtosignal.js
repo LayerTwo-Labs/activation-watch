@@ -138,8 +138,8 @@ const HowToSignal = () => {
           {text[language]["how_to_signal"]["step_1"]} <Link href="https://github.com/LayerTwo-Labs/activation-watch/tree/bitcoin-activation" style={{color: '#007bff', textDecoration: 'none'}}>https://github.com/LayerTwo-Labs/activation-watch/tree/bitcoin-activation</Link>
         </StyledTypography>
 
-        <StyledTypography sx={{fontSize: '14px', marginTop: '15px', fontFamily: 'Roboto mono, Courier New, Courier, monospace'}}>
-	  2. Mine blocks using GBT:
+        <StyledTypography>
+	  2. Mine blocks using GBT: 
           {"./bitcoin-cli getblocktemplate '{\"rules\": [\"segwit\", \"taproot\", \"APO\", \"TXHSH\"]}'"}
         </StyledTypography>
       </StyledBox>
