@@ -140,7 +140,11 @@ const HowToSignal = () => {
 
         <StyledTypography>
 	  2. Mine blocks using GBT: 
-          {"./bitcoin-cli getblocktemplate '{\"rules\": [\"segwit\", \"taproot\", \"APO\", \"TXHSH\"]}'"}
+          {"./bitcoin-cli getblocktemplate '{\"rules\": [\"segwit\", \"taproot\", \""}
+          <span style={{backgroundColor: '#FFD700', color: '#000000', padding: '2px 4px'}}>APO</span>
+          {"\", \""}
+          <span style={{backgroundColor: '#FFD700', color: '#000000', padding: '2px 4px'}}>TXHSH</span>
+          {"\"]}'}"}
         </StyledTypography>
       </StyledBox>
       
