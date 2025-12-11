@@ -186,7 +186,7 @@ const ProposalInfo = () => {
           </thead>
           <tbody>
             <tr>
-              <td className="tg-7zrl">1</td>
+              <td className="tg-7zrl">3</td>
               <td className="tg-7zrl">APO</td>
               <td className="tg-7zrl">118</td>
               <td className="tg-7zrl">{language === 'en' 
@@ -194,7 +194,7 @@ const ProposalInfo = () => {
                 : 'BIP 118 (SIGHASH_ANYPREVOUT 或 APO) 引入了一种新的签名哈希模式，允许签名对任何先前的输出有效，从而实现更灵活和可扩展的链下协议，如支付通道和通道工厂。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">2</td>
+              <td className="tg-7zrl">4</td>
               <td className="tg-7zrl">BMM</td>
               <td className="tg-7zrl">301</td>
               <td className="tg-7zrl">{language === 'en'
@@ -202,7 +202,7 @@ const ProposalInfo = () => {
                 : 'BIP 301 (盲合并挖矿或 BMM)，允许比特币矿工从其他区块链赚取费用，而无需运行它们的软件，通过允许这些链的用户竞价以包含在比特币区块中。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">3</td>
+              <td className="tg-7zrl">5</td>
               <td className="tg-7zrl">CAT</td>
               <td className="tg-7zrl">347</td>
               <td className="tg-7zrl">{language === 'en'
@@ -210,7 +210,7 @@ const ProposalInfo = () => {
                 : 'BIP 347 (OP_CAT) 旨在重新引入 OP_CAT 操作码，使比特币脚本中的数据元素能够连接，从而允许更具表现力的智能合约和复杂的支出条件。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">4</td>
+              <td className="tg-7zrl">6</td>
               <td className="tg-7zrl">CCV</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -218,7 +218,7 @@ const ProposalInfo = () => {
                 : 'OP_CCV (OP_CHECKCONTRACTVERIFY) 是一个提议的操作码，允许脚本要求交易输出匹配特定的合约或模板，从而实现新形式的契约和可编程支出条件。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">5</td>
+              <td className="tg-7zrl">7</td>
               <td className="tg-7zrl">CSFS</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -226,7 +226,7 @@ const ProposalInfo = () => {
                 : 'OP_CSFS (OP_CHECKSIGFROMSTACK) 是一个提议的操作码，允许对脚本堆栈中的任意数据进行签名验证，从而实现更灵活的合约构造和跨链协议。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">6</td>
+              <td className="tg-7zrl">8</td>
               <td className="tg-7zrl">CTV</td>
               <td className="tg-7zrl">119</td>
               <td className="tg-7zrl">{language === 'en'
@@ -234,7 +234,7 @@ const ProposalInfo = () => {
                 : 'BIP 119 (OP_CHECKTEMPLATEVERIFY 或 CTV) 提出了一种新的操作码，通过提交支出交易的模板，让用户限制特定 UTXO 的支出方式和地点，从而实现保险库、拥塞控制和支付池等高级功能。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">7</td>
+              <td className="tg-7zrl">9</td>
               <td className="tg-7zrl">DC</td>
               <td className="tg-7zrl">300</td>
               <td className="tg-7zrl">{language === 'en'
@@ -242,7 +242,7 @@ const ProposalInfo = () => {
                 : 'BIP 300 (OP_DRIVECHAIN 或 DC) 使创建称为驱动链的比特币侧链成为可能，矿工批准从侧链回到主链的提款，允许在不改变比特币基础层的情况下尝试新功能。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">8</td>
+              <td className="tg-7zrl">10</td>
               <td className="tg-7zrl">GCC</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -250,7 +250,7 @@ const ProposalInfo = () => {
                 : '大共识清理 (GCC) 是一项提议，旨在删除或澄清比特币共识代码中模糊、未使用或危险的规则，提高可维护性并减少攻击面。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">9</td>
+              <td className="tg-7zrl">11</td>
               <td className="tg-7zrl">GSR</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -258,7 +258,7 @@ const ProposalInfo = () => {
                 : '大脚本恢复 (GSR) 旨在重新启用先前禁用或限制的比特币脚本操作码，如 OP_CAT，以扩展脚本功能和可编程性。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">10</td>
+              <td className="tg-7zrl">12</td>
               <td className="tg-7zrl">INKEY</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -266,7 +266,7 @@ const ProposalInfo = () => {
                 : 'OP_INTERNALKEY (INKEY) 是一个提议的操作码，它公开了 Taproot 脚本中使用的内部公钥，允许更高级的合约构造和密钥管理方案。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">11</td>
+              <td className="tg-7zrl">13</td>
               <td className="tg-7zrl">PAIRC</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -274,7 +274,7 @@ const ProposalInfo = () => {
                 : 'OP_PAIRCOMMIT (PAIRC) 是一个新操作码的提议，允许在交易中提交数据对，促进更复杂的契约和合约设计。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">12</td>
+              <td className="tg-7zrl">14</td>
               <td className="tg-7zrl">QNTUM</td>
               <td className="tg-7zrl">360</td>
               <td className="tg-7zrl">{language === 'en'
@@ -290,7 +290,7 @@ const ProposalInfo = () => {
                 : 'BIP 444（缩减数据临时软分叉）暂时限制共识级别的数据字段大小。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">13</td>
+              <td className="tg-7zrl">15</td>
               <td className="tg-7zrl">TWEKD</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -298,7 +298,7 @@ const ProposalInfo = () => {
                 : 'OP_TWEAKADD (TWEKD) 是一个提议的操作码，它使得在比特币脚本中可以向公钥添加调整值，支持高级密码协议和密钥管理。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">14</td>
+              <td className="tg-7zrl">16</td>
               <td className="tg-7zrl">TXHSH</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -306,7 +306,7 @@ const ProposalInfo = () => {
                 : 'OP_TXHASH (TXHSH) 是一个提议的操作码，允许脚本访问当前交易的哈希值，实现内省和更动态的合约逻辑。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">15</td>
+              <td className="tg-7zrl">17</td>
               <td className="tg-7zrl">VAULT</td>
               <td className="tg-7zrl">345</td>
               <td className="tg-7zrl">{language === 'en'
