@@ -282,7 +282,7 @@ const ProposalInfo = () => {
                 : 'BIP 360 通过引入新的输出类型和混合签名方案，概述了比特币向抗量子密码学过渡的计划，以减轻未来量子计算机带来的风险。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">16</td>
+              <td className="tg-7zrl">15</td>
               <td className="tg-7zrl">RDTS</td>
               <td className="tg-7zrl">444</td>
               <td className="tg-7zrl">{language === 'en'
@@ -290,7 +290,7 @@ const ProposalInfo = () => {
                 : 'BIP 444（缩减数据临时软分叉）暂时限制共识级别的数据字段大小。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">15</td>
+              <td className="tg-7zrl">16</td>
               <td className="tg-7zrl">TWEKD</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -298,7 +298,7 @@ const ProposalInfo = () => {
                 : 'OP_TWEAKADD (TWEKD) 是一个提议的操作码，它使得在比特币脚本中可以向公钥添加调整值，支持高级密码协议和密钥管理。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">16</td>
+              <td className="tg-7zrl">17</td>
               <td className="tg-7zrl">TXHSH</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -306,7 +306,7 @@ const ProposalInfo = () => {
                 : 'OP_TXHASH (TXHSH) 是一个提议的操作码，允许脚本访问当前交易的哈希值，实现内省和更动态的合约逻辑。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">17</td>
+              <td className="tg-7zrl">18</td>
               <td className="tg-7zrl">VAULT</td>
               <td className="tg-7zrl">345</td>
               <td className="tg-7zrl">{language === 'en'
