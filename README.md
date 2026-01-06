@@ -11,7 +11,7 @@ Complete IBD
 
 Server setup:
 ```
-bitcoind running after follwing setup instructions.
+bitcoind running after following setup instructions.
 
 An Apache server to display the nextjs activation.watch software. 
 So the requirements for your server should be:
