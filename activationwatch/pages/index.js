@@ -69,6 +69,52 @@ export default function Home() {
 
       {/* Links */}
       <Box display="flex" justifyContent="center" alignItems="center">
+        <Link href="https://activation.watch/" style={{ textDecoration: 'none' }}>
+          <Typography 
+            variant="h6" 
+            sx={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
+              fontWeight: '500',
+              fontSize: {xs: '16px', sm: '20px'},
+              color: '#F2F2F2',
+              marginRight: '15px',
+              padding: '8px 16px',
+              border: '2px solid #F2F2F2',
+              borderRadius: '8px',
+              transition: 'all 0.3s',
+              '&:hover': {
+                color: '#f2a900',
+                borderColor: '#f2a900',
+                backgroundColor: 'rgba(242, 169, 0, 0.1)',
+              }
+            }}
+          >
+            {text[language]["main_page"]["links"]["link3"]}
+          </Typography>
+        </Link>
+        <Link href="https://activation.watch/bip/APO" style={{ textDecoration: 'none' }}>
+          <Typography 
+            variant="h6" 
+            sx={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
+              fontWeight: '500',
+              fontSize: {xs: '16px', sm: '20px'},
+              color: '#F2F2F2',
+              marginRight: '15px',
+              padding: '8px 16px',
+              border: '2px solid #F2F2F2',
+              borderRadius: '8px',
+              transition: 'all 0.3s',
+              '&:hover': {
+                color: '#f2a900',
+                borderColor: '#f2a900',
+                backgroundColor: 'rgba(242, 169, 0, 0.1)',
+              }
+            }}
+          >
+            {text[language]["main_page"]["links"]["link4"]}
+          </Typography>
+        </Link>
         <Link href="/proposalinfo" style={{ textDecoration: 'none' }}>
           <Typography 
             variant="h6" 
