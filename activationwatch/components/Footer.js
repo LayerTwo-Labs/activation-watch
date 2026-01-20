@@ -54,7 +54,7 @@ const Footer = () => {
           }}
         >
           <Typography variant="caption" color="white">
-            Copyright ©2023-2025
+            Created by <a href="https://layertwolabs.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#f2a900', textDecoration: 'none' }}>LayerTwoLabs</a>, Hosted on <a href="https://github.com/layerTwo-Labs/activation-watch/" target="_blank" rel="noopener noreferrer" style={{ color: '#f2a900', textDecoration: 'none' }}>GitHub</a> Copyright ©2023-2026
           </Typography>
         </Box>
       </Container>
