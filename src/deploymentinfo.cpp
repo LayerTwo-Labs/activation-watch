@@ -18,23 +18,7 @@ const std::array<VBDeploymentInfo,Consensus::MAX_VERSION_BITS_DEPLOYMENTS> Versi
         .gbt_optional_rule = true,
     },
     VBDeploymentInfo{
-        .name = "APO",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
-        .name = "BMM",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
         .name = "CAT",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
-        .name = "CCV",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
-        .name = "CSFS",
         .gbt_optional_rule = true,
     },
     VBDeploymentInfo{
@@ -54,19 +38,7 @@ const std::array<VBDeploymentInfo,Consensus::MAX_VERSION_BITS_DEPLOYMENTS> Versi
         .gbt_optional_rule = true,
     },
     VBDeploymentInfo{
-        .name = "INKEY",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
-        .name = "PAIRC",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
         .name = "QNTUM",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
-        .name = "TWEKD",
         .gbt_optional_rule = true,
     },
     VBDeploymentInfo{

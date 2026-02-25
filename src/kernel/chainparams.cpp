@@ -118,82 +118,47 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].threshold = 1815; // 90%
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].period = 2016;
 
-        consensus.vDeployments[Consensus::DEPLOYMENT_APO].bit = 3;
-        consensus.vDeployments[Consensus::DEPLOYMENT_APO].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_APO].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_APO].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_BMM].bit = 4;
-        consensus.vDeployments[Consensus::DEPLOYMENT_BMM].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_BMM].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_BMM].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_CAT].bit = 5;
+        consensus.vDeployments[Consensus::DEPLOYMENT_CAT].bit = 3;
         consensus.vDeployments[Consensus::DEPLOYMENT_CAT].nStartTime = 1745454818;
         consensus.vDeployments[Consensus::DEPLOYMENT_CAT].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_CAT].min_activation_height = 0;
 
-        consensus.vDeployments[Consensus::DEPLOYMENT_CCV].bit = 6;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CCV].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CCV].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CCV].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSFS].bit = 7;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSFS].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSFS].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSFS].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].bit = 8;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_DC].bit = 9;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DC].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DC].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DC].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].bit = 10;
-        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].bit = 11;
-        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_INKEY].bit = 12;
-        consensus.vDeployments[Consensus::DEPLOYMENT_INKEY].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_INKEY].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_INKEY].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_PAIRC].bit = 13;
-        consensus.vDeployments[Consensus::DEPLOYMENT_PAIRC].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_PAIRC].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_PAIRC].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].bit = 14;
-        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].min_activation_height = 0;
-
-        consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].bit = 15;
+        consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].bit = 4;
         consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].nStartTime = 1745454818;
         consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_RDTS].min_activation_height = 0;
 
-        consensus.vDeployments[Consensus::DEPLOYMENT_TWEKD].bit = 16;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TWEKD].nStartTime = 1745454818;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TWEKD].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TWEKD].min_activation_height = 0;
+        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].bit = 5;
+        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].nStartTime = 1745454818;
+        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
+        consensus.vDeployments[Consensus::DEPLOYMENT_QNTUM].min_activation_height = 0;
 
-        consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].bit = 17;
+        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].bit = 6;
+        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].nStartTime = 1745454818;
+        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
+        consensus.vDeployments[Consensus::DEPLOYMENT_CTV].min_activation_height = 0;
+
+        consensus.vDeployments[Consensus::DEPLOYMENT_DC].bit = 7;
+        consensus.vDeployments[Consensus::DEPLOYMENT_DC].nStartTime = 1745454818;
+        consensus.vDeployments[Consensus::DEPLOYMENT_DC].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
+        consensus.vDeployments[Consensus::DEPLOYMENT_DC].min_activation_height = 0;
+
+        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].bit = 8;
+        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].nStartTime = 1745454818;
+        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
+        consensus.vDeployments[Consensus::DEPLOYMENT_GCC].min_activation_height = 0;
+
+        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].bit = 9;
+        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].nStartTime = 1745454818;
+        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
+        consensus.vDeployments[Consensus::DEPLOYMENT_GSR].min_activation_height = 0;
+
+        consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].bit = 10;
         consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].nStartTime = 1745454818;
         consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_TXHSH].min_activation_height = 0;
 
-        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].bit = 18;
+        consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].bit = 11;
         consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].nStartTime = 1745454818;
         consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].nTimeout = Consensus::BIP9Deployment::NO_TIMEOUT;
         consensus.vDeployments[Consensus::DEPLOYMENT_VAULT].min_activation_height = 0;

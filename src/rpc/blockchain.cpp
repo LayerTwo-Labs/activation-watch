@@ -1415,20 +1415,13 @@ RPCHelpMan getblockchaininfo()
     obj.pushKV("warnings", node::GetWarningsForRpc(*CHECK_NONFATAL(node.warnings), IsDeprecatedRPCEnabled("warnings")));
 
     UniValue softforks(UniValue::VOBJ);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_APO);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_BMM);
     SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_CAT);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_CCV);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_CSFS);
+    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_RDTS);
+    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_QNTUM);
     SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_CTV);
     SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_DC);
     SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_GCC);
     SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_GSR);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_INKEY);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_PAIRC);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_QNTUM);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_RDTS);
-    SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_TWEKD);
     SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_TXHSH);
     SoftForkDescPushBack(&tip, softforks, chainman, Consensus::DEPLOYMENT_VAULT);
 
