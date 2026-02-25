@@ -232,23 +232,7 @@ const ProposalInfo = () => {
           </thead>
           <tbody>
             <tr>
-              <td className="tg-7zrl">3</td>
-              <td className="tg-7zrl">APO</td>
-              <td className="tg-7zrl">118</td>
-              <td className="tg-7zrl">{language === 'en' 
-                ? 'BIP 118 (SIGHASH_ANYPREVOUT or APO) introduces a new signature hashing mode that allows signatures to be valid for any previous output, enabling more flexible and scalable off-chain protocols such as payment channels and channel factories.'
-                : 'BIP 118 (SIGHASH_ANYPREVOUT 或 APO) 引入了一种新的签名哈希模式，允许签名对任何先前的输出有效，从而实现更灵活和可扩展的链下协议，如支付通道和通道工厂。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">4</td>
-              <td className="tg-7zrl">BMM</td>
-              <td className="tg-7zrl">301</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'BIP 301 (Blind Merged Mining or BMM), allows Bitcoin miners to earn fees from other blockchains, without running their software, by allowing users of those chains to bid for inclusion in Bitcoin blocks.'
-                : 'BIP 301 (盲合并挖矿或 BMM)，允许比特币矿工从其他区块链赚取费用，而无需运行它们的软件，通过允许这些链的用户竞价以包含在比特币区块中。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">5</td>
+              <td className="tg-7zrl">1</td>
               <td className="tg-7zrl">CAT</td>
               <td className="tg-7zrl">347</td>
               <td className="tg-7zrl">{language === 'en'
@@ -256,23 +240,7 @@ const ProposalInfo = () => {
                 : 'BIP 347 (OP_CAT) 旨在重新引入 OP_CAT 操作码，使比特币脚本中的数据元素能够连接，从而允许更具表现力的智能合约和复杂的支出条件。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">6</td>
-              <td className="tg-7zrl">CCV</td>
-              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'OP_CCV (OP_CHECKCONTRACTVERIFY) is a proposed opcode that allows a script to require that a transaction output matches a specific contract or template, enabling new forms of covenants and programmable spending conditions.'
-                : 'OP_CCV (OP_CHECKCONTRACTVERIFY) 是一个提议的操作码，允许脚本要求交易输出匹配特定的合约或模板，从而实现新形式的契约和可编程支出条件。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">7</td>
-              <td className="tg-7zrl">CSFS</td>
-              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'OP_CSFS (OP_CHECKSIGFROMSTACK) is a proposed opcode allowing signature verification against arbitrary data from the script stack, enabling more flexible contract constructions and cross-chain protocols.'
-                : 'OP_CSFS (OP_CHECKSIGFROMSTACK) 是一个提议的操作码，允许对脚本堆栈中的任意数据进行签名验证，从而实现更灵活的合约构造和跨链协议。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">8</td>
+              <td className="tg-7zrl">2</td>
               <td className="tg-7zrl">CTV</td>
               <td className="tg-7zrl">119</td>
               <td className="tg-7zrl">{language === 'en'
@@ -280,47 +248,7 @@ const ProposalInfo = () => {
                 : 'BIP 119 (OP_CHECKTEMPLATEVERIFY 或 CTV) 提出了一种新的操作码，通过提交支出交易的模板，让用户限制特定 UTXO 的支出方式和地点，从而实现保险库、拥塞控制和支付池等高级功能。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">9</td>
-              <td className="tg-7zrl">DC</td>
-              <td className="tg-7zrl">300</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'BIP 300 (OP_DRIVECHAIN or DC) enables the creation of Bitcoin sidechains called Drivechains, where miners approve withdrawals from sidechains back to the main chain, allowing experimentation with new features without changing Bitcoin\'s base layer.'
-                : 'BIP 300 (OP_DRIVECHAIN 或 DC) 使创建称为驱动链的比特币侧链成为可能，矿工批准从侧链回到主链的提款，允许在不改变比特币基础层的情况下尝试新功能。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">10</td>
-              <td className="tg-7zrl">GCC</td>
-              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'The Great Consensus Cleanup (GCC) is a proposal to remove or clarify ambiguous, unused, or dangerous rules in Bitcoin\'s consensus code, improving maintainability and reducing attack surface.'
-                : '大共识清理 (GCC) 是一项提议，旨在删除或澄清比特币共识代码中模糊、未使用或危险的规则，提高可维护性并减少攻击面。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">11</td>
-              <td className="tg-7zrl">GSR</td>
-              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'The Great Script Restoration (GSR) aims to re-enable previously disabled or restricted Bitcoin Script opcodes, such as OP_CAT, to expand scripting capabilities and programmability.'
-                : '大脚本恢复 (GSR) 旨在重新启用先前禁用或限制的比特币脚本操作码，如 OP_CAT，以扩展脚本功能和可编程性。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">12</td>
-              <td className="tg-7zrl">INKEY</td>
-              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'OP_INTERNALKEY (INKEY) is a proposed opcode that exposes the internal public key used in Taproot scripts, allowing for more advanced contract constructions and key management schemes.'
-                : 'OP_INTERNALKEY (INKEY) 是一个提议的操作码，它公开了 Taproot 脚本中使用的内部公钥，允许更高级的合约构造和密钥管理方案。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">13</td>
-              <td className="tg-7zrl">PAIRC</td>
-              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'OP_PAIRCOMMIT (PAIRC) is a proposal for a new opcode that allows committing to pairs of data in a transaction, facilitating more complex covenant and contract designs.'
-                : 'OP_PAIRCOMMIT (PAIRC) 是一个新操作码的提议，允许在交易中提交数据对，促进更复杂的契约和合约设计。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">14</td>
+              <td className="tg-7zrl">3</td>
               <td className="tg-7zrl">QNTUM</td>
               <td className="tg-7zrl">360</td>
               <td className="tg-7zrl">{language === 'en'
@@ -328,7 +256,7 @@ const ProposalInfo = () => {
                 : 'BIP 360 通过引入新的输出类型和混合签名方案，概述了比特币向抗量子密码学过渡的计划，以减轻未来量子计算机带来的风险。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">15</td>
+              <td className="tg-7zrl">4</td>
               <td className="tg-7zrl">RDTS</td>
               <td className="tg-7zrl">444</td>
               <td className="tg-7zrl">{language === 'en'
@@ -336,15 +264,31 @@ const ProposalInfo = () => {
                 : 'BIP 444（缩减数据临时软分叉）暂时限制共识级别的数据字段大小。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">16</td>
-              <td className="tg-7zrl">TWEKD</td>
-              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
+              <td className="tg-7zrl">5</td>
+              <td className="tg-7zrl">DC</td>
+              <td className="tg-7zrl">300</td>
               <td className="tg-7zrl">{language === 'en'
-                ? 'OP_TWEAKADD (TWEKD) is a proposed opcode that enables the addition of a tweak (a value) to a public key within Bitcoin Script, supporting advanced cryptographic protocols and key management.'
-                : 'OP_TWEAKADD (TWEKD) 是一个提议的操作码，它使得在比特币脚本中可以向公钥添加调整值，支持高级密码协议和密钥管理。'}</td>
+                ? 'BIP 300 (OP_DRIVECHAIN or DC) enables the creation of Bitcoin sidechains called Drivechains, where miners approve withdrawals from sidechains back to the main chain, allowing experimentation with new features without changing Bitcoin\'s base layer.'
+                : 'BIP 300 (OP_DRIVECHAIN 或 DC) 使创建称为驱动链的比特币侧链成为可能，矿工批准从侧链回到主链的提款，允许在不改变比特币基础层的情况下尝试新功能。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">17</td>
+              <td className="tg-7zrl">6</td>
+              <td className="tg-7zrl">GCC</td>
+              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
+              <td className="tg-7zrl">{language === 'en'
+                ? 'The Great Consensus Cleanup (GCC) is a proposal to remove or clarify ambiguous, unused, or dangerous rules in Bitcoin\'s consensus code, improving maintainability and reducing attack surface.'
+                : '大共识清理 (GCC) 是一项提议，旨在删除或澄清比特币共识代码中模糊、未使用或危险的规则，提高可维护性并减少攻击面。'}</td>
+            </tr>
+            <tr>
+              <td className="tg-7zrl">7</td>
+              <td className="tg-7zrl">GSR</td>
+              <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
+              <td className="tg-7zrl">{language === 'en'
+                ? 'The Great Script Restoration (GSR) aims to re-enable previously disabled or restricted Bitcoin Script opcodes, such as OP_CAT, to expand scripting capabilities and programmability.'
+                : '大脚本恢复 (GSR) 旨在重新启用先前禁用或限制的比特币脚本操作码，如 OP_CAT，以扩展脚本功能和可编程性。'}</td>
+            </tr>
+            <tr>
+              <td className="tg-7zrl">8</td>
               <td className="tg-7zrl">TXHSH</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -352,7 +296,7 @@ const ProposalInfo = () => {
                 : 'OP_TXHASH (TXHSH) 是一个提议的操作码，允许脚本访问当前交易的哈希值，实现内省和更动态的合约逻辑。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">18</td>
+              <td className="tg-7zrl">9</td>
               <td className="tg-7zrl">VAULT</td>
               <td className="tg-7zrl">345</td>
               <td className="tg-7zrl">{language === 'en'
