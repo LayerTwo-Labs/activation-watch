@@ -92,7 +92,7 @@ export default function Home() {
             {text[language]["main_page"]["links"]["link3"]}
           </Typography>
         </Link>
-        <Link href="https://activation.watch/bip/APO" style={{ textDecoration: 'none' }}>
+        <Link href="https://activation.watch/bip/CAT" style={{ textDecoration: 'none' }}>
           <Typography 
             variant="h6" 
             sx={{
