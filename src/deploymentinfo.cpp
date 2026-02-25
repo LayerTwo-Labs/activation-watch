@@ -22,6 +22,14 @@ const std::array<VBDeploymentInfo,Consensus::MAX_VERSION_BITS_DEPLOYMENTS> Versi
         .gbt_optional_rule = true,
     },
     VBDeploymentInfo{
+        .name = "RDTS",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
+        .name = "QNTUM",
+        .gbt_optional_rule = true,
+    },
+    VBDeploymentInfo{
         .name = "CTV",
         .gbt_optional_rule = true,
     },
@@ -38,19 +46,11 @@ const std::array<VBDeploymentInfo,Consensus::MAX_VERSION_BITS_DEPLOYMENTS> Versi
         .gbt_optional_rule = true,
     },
     VBDeploymentInfo{
-        .name = "QNTUM",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
         .name = "TXHSH",
         .gbt_optional_rule = true,
     },
     VBDeploymentInfo{
         .name = "VAULT",
-        .gbt_optional_rule = true,
-    },
-    VBDeploymentInfo{
-        .name = "RDTS",
         .gbt_optional_rule = true,
     },
 };
