@@ -232,28 +232,12 @@ const ProposalInfo = () => {
           </thead>
           <tbody>
             <tr>
-              <td className="tg-7zrl">1</td>
+              <td className="tg-7zrl">3</td>
               <td className="tg-7zrl">CAT</td>
               <td className="tg-7zrl">347</td>
               <td className="tg-7zrl">{language === 'en'
                 ? 'BIP 347 (OP_CAT) seeks to reintroduce the OP_CAT opcode, enabling the concatenation of data elements in Bitcoin Script, which would allow for more expressive smart contracts and complex spending conditions.'
                 : 'BIP 347 (OP_CAT) 旨在重新引入 OP_CAT 操作码，使比特币脚本中的数据元素能够连接，从而允许更具表现力的智能合约和复杂的支出条件。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">2</td>
-              <td className="tg-7zrl">CTV</td>
-              <td className="tg-7zrl">119</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'BIP 119 (OP_CHECKTEMPLATEVERIFY or CTV) proposes a new opcode that lets users restrict how and where specific UTXOs can be spent by committing to a template of the spending transaction, enabling advanced features like vaults, congestion control, and payment pools.'
-                : 'BIP 119 (OP_CHECKTEMPLATEVERIFY 或 CTV) 提出了一种新的操作码，通过提交支出交易的模板，让用户限制特定 UTXO 的支出方式和地点，从而实现保险库、拥塞控制和支付池等高级功能。'}</td>
-            </tr>
-            <tr>
-              <td className="tg-7zrl">3</td>
-              <td className="tg-7zrl">QNTUM</td>
-              <td className="tg-7zrl">360</td>
-              <td className="tg-7zrl">{language === 'en'
-                ? 'BIP 360 outlines a transition plan to quantum-resistant cryptography for Bitcoin by introducing new output types and hybrid signature schemes to mitigate the risks posed by future quantum computers.'
-                : 'BIP 360 通过引入新的输出类型和混合签名方案，概述了比特币向抗量子密码学过渡的计划，以减轻未来量子计算机带来的风险。'}</td>
             </tr>
             <tr>
               <td className="tg-7zrl">4</td>
@@ -265,14 +249,31 @@ const ProposalInfo = () => {
             </tr>
             <tr>
               <td className="tg-7zrl">5</td>
-              <td className="tg-7zrl">DC</td>
-              <td className="tg-7zrl">300</td>
+              <td className="tg-7zrl">QNTUM</td>
+              <td className="tg-7zrl">360</td>
               <td className="tg-7zrl">{language === 'en'
-                ? 'BIP 300 (OP_DRIVECHAIN or DC) enables the creation of Bitcoin sidechains called Drivechains, where miners approve withdrawals from sidechains back to the main chain, allowing experimentation with new features without changing Bitcoin\'s base layer.'
-                : 'BIP 300 (OP_DRIVECHAIN 或 DC) 使创建称为驱动链的比特币侧链成为可能，矿工批准从侧链回到主链的提款，允许在不改变比特币基础层的情况下尝试新功能。'}</td>
+                ? 'BIP 360 outlines a transition plan to quantum-resistant cryptography for Bitcoin by introducing new output types and hybrid signature schemes to mitigate the risks posed by future quantum computers.'
+                : 'BIP 360 通过引入新的输出类型和混合签名方案，概述了比特币向抗量子密码学过渡的计划，以减轻未来量子计算机带来的风险。'}</td>
             </tr>
             <tr>
               <td className="tg-7zrl">6</td>
+              <td className="tg-7zrl">CTV</td>
+              <td className="tg-7zrl">119</td>
+              <td className="tg-7zrl">{language === 'en'
+                ? 'BIP 119 (OP_CHECKTEMPLATEVERIFY or CTV) proposes a new opcode that lets users restrict how and where specific UTXOs can be spent by committing to a template of the spending transaction, enabling advanced features like vaults, congestion control, and payment pools.'
+                : 'BIP 119 (OP_CHECKTEMPLATEVERIFY 或 CTV) 提出了一种新的操作码，通过提交支出交易的模板，让用户限制特定 UTXO 的支出方式和地点，从而实现保险库、拥塞控制和支付池等高级功能。'}</td>
+            </tr>
+
+            <tr>
+              <td className="tg-7zrl">7</td>
+              <td className="tg-7zrl">DC</td>
+              <td className="tg-7zrl">300</td>
+              <td className="tg-7zrl">{language === 'en'
+                ? 'BIP 300 & 301 (OP_DRIVECHAIN or DC) and BMM (Blind Merged Mining) enable the creation of Bitcoin sidechains called Drivechains, where miners approve withdrawals from sidechains back to the main chain, allowing experimentation with new features without changing Bitcoin\'s base layer.'
+                : 'BIP 300 (OP_DRIVECHAIN 或 DC) 使创建称为驱动链的比特币侧链成为可能，矿工批准从侧链回到主链的提款，允许在不改变比特币基础层的情况下尝试新功能。'}</td>
+            </tr>
+            <tr>
+              <td className="tg-7zrl">8</td>
               <td className="tg-7zrl">GCC</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -280,7 +281,7 @@ const ProposalInfo = () => {
                 : '大共识清理 (GCC) 是一项提议，旨在删除或澄清比特币共识代码中模糊、未使用或危险的规则，提高可维护性并减少攻击面。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">7</td>
+              <td className="tg-7zrl">9</td>
               <td className="tg-7zrl">GSR</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -288,7 +289,7 @@ const ProposalInfo = () => {
                 : '大脚本恢复 (GSR) 旨在重新启用先前禁用或限制的比特币脚本操作码，如 OP_CAT，以扩展脚本功能和可编程性。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">8</td>
+              <td className="tg-7zrl">10</td>
               <td className="tg-7zrl">TXHSH</td>
               <td className="tg-7zrl">{language === 'en' ? 'none' : '无'}</td>
               <td className="tg-7zrl">{language === 'en'
@@ -296,7 +297,7 @@ const ProposalInfo = () => {
                 : 'OP_TXHASH (TXHSH) 是一个提议的操作码，允许脚本访问当前交易的哈希值，实现内省和更动态的合约逻辑。'}</td>
             </tr>
             <tr>
-              <td className="tg-7zrl">9</td>
+              <td className="tg-7zrl">11</td>
               <td className="tg-7zrl">VAULT</td>
               <td className="tg-7zrl">345</td>
               <td className="tg-7zrl">{language === 'en'

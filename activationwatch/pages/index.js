@@ -36,7 +36,7 @@ export default function Home() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ myBips: ['CAT', 'CTV', 'QNTUM', 'RDTS', 'DC', 'GCC', 'GSR', 'TXHSH', 'VAULT'] }),
+        body: JSON.stringify({ myBips: ['CAT', 'RDTS', 'QNTUM', 'CTV', 'DC', 'GCC', 'GSR', 'TXHSH', 'VAULT'] }),
       });
 
       const result = await response.json();
