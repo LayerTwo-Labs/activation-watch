@@ -256,43 +256,87 @@ export default function Home() {
 
               let url = "/bip/" + item.Bip;
 
+              const isActive = green_count > 0;
+              
               return (
                 <TableRow 
                   key={idx} 
                   sx={{
-                    transition: 'color 0.3s',
-                    backgroundColor: idx % 2 === 1 ? '#343a40' : 'rgba(255,255,255,0.05)',
-                    '&:hover': {
-                      backgroundColor: 'rgba(255,255,255,0.075)',
-                      transition: 'color 0.3s',
-                      '& > .MuiTableCell-root:first-of-type .MuiTypography-root': {
-                        color: '#f2a900',
+                    transition: 'all 0.3s ease-in-out',
+                    backgroundColor: isActive 
+                      ? (idx % 2 === 1 ? '#3a4a3d' : 'rgba(76, 175, 80, 0.15)')
+                      : (idx % 2 === 1 ? '#2a2a2a' : 'rgba(255,255,255,0.03)'),
+                    opacity: isActive ? 1 : 0.4,
+                    borderLeft: isActive ? '4px solid #4caf50' : '4px solid transparent',
+                    boxShadow: isActive ? '0 0 20px rgba(76, 175, 80, 0.3), inset 0 0 20px rgba(76, 175, 80, 0.1)' : 'none',
+                    animation: isActive ? 'pulse 3s ease-in-out infinite' : 'none',
+                    '@keyframes pulse': {
+                      '0%, 100%': {
+                        boxShadow: '0 0 20px rgba(76, 175, 80, 0.3), inset 0 0 20px rgba(76, 175, 80, 0.1)',
                       },
-                      '& > .MuiTableCell-root:first-of-type a': {
-                        textDecorationColor: '#f2a900',
+                      '50%': {
+                        boxShadow: '0 0 30px rgba(76, 175, 80, 0.5), inset 0 0 30px rgba(76, 175, 80, 0.2)',
                       },
                     },
-                    cursor: 'pointer'
+                    '&:hover': {
+                      backgroundColor: isActive 
+                        ? 'rgba(76, 175, 80, 0.25)' 
+                        : 'rgba(255,255,255,0.05)',
+                      transition: 'all 0.3s ease-in-out',
+                      transform: isActive ? 'scale(1.02)' : 'none',
+                      boxShadow: isActive ? '0 0 40px rgba(76, 175, 80, 0.5), inset 0 0 30px rgba(76, 175, 80, 0.2)' : 'none',
+                      '& > .MuiTableCell-root:first-of-type .MuiTypography-root': {
+                        color: isActive ? '#81c784' : '#888',
+                      },
+                      '& > .MuiTableCell-root:first-of-type a': {
+                        textDecorationColor: isActive ? '#81c784' : '#888',
+                      },
+                    },
+                    cursor: isActive ? 'pointer' : 'not-allowed',
+                    filter: isActive ? 'none' : 'grayscale(100%)',
                   }}
                   onClick={() => {
-                    // Navigate to the link when the TableRow is clicked
-                    window.location.href = url;
+                    if (isActive) {
+                      // Navigate to the link when the TableRow is clicked
+                      window.location.href = url;
+                    }
                   }}
                 >
                   <TableCell sx={{paddingTop: { xs: '10px', sm: '16px' }, paddingBottom: { xs: '10px', sm: '16px' }, borderBottom: '1px solid #454d55' }}>
                     <Link href={url}
-                      style={{color: '#f2f2f2', textDecoration: 'none' }}
+                      style={{
+                        color: isActive ? '#f2f2f2' : '#666', 
+                        textDecoration: 'none',
+                        pointerEvents: isActive ? 'auto' : 'none'
+                      }}
                     >
-                      <StyledTypography sx={{ textDecoration: 'underline', fontSize: {xs: '16px', sm: '20px' }}}>
+                      <StyledTypography sx={{ 
+                        textDecoration: 'underline', 
+                        fontSize: {xs: '16px', sm: '20px' },
+                        fontWeight: isActive ? 600 : 400,
+                        color: isActive ? '#f2f2f2' : '#666'
+                      }}>
                       {item.Bip}
                       </StyledTypography>
                     </Link>
                   </TableCell>
                   <TableCell sx={{paddingTop: { xs: '10px', sm: '16px' }, paddingBottom: { xs: '10px', sm: '16px' }, borderBottom: '1px solid #454d55' }}>
-                    <StyledTypography sx={{fontSize: {xs: '16px', sm: '20px' }}}>{`${green_count}/${elapsed}`}</StyledTypography>
+                    <StyledTypography sx={{
+                      fontSize: {xs: '16px', sm: '20px' },
+                      fontWeight: isActive ? 600 : 400,
+                      color: isActive ? '#4caf50' : '#666'
+                    }}>
+                      {`${green_count}/${elapsed}`}
+                    </StyledTypography>
                   </TableCell>
                   <TableCell sx={{paddingTop: { xs: '10px', sm: '16px' }, paddingBottom: { xs: '10px', sm: '16px' }, borderBottom: '1px solid #454d55' }}>
-                    <StyledTypography sx={{fontSize: {xs: '16px', sm: '20px' }}}>{percentage}</StyledTypography>
+                    <StyledTypography sx={{
+                      fontSize: {xs: '16px', sm: '20px' },
+                      fontWeight: isActive ? 600 : 400,
+                      color: isActive ? '#4caf50' : '#666'
+                    }}>
+                      {percentage}
+                    </StyledTypography>
                   </TableCell>
                 </TableRow>
               );
